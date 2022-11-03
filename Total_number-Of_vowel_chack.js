@@ -1,0 +1,17 @@
+//কোন sentence এ কতগুলো vowel আছে তা নির্ণয় করা যায় কিভাবে?
+
+const vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+
+function countvowiel(sentence) {
+	let count = 0;
+	const letter = Array.from(sentence);
+
+	letter.forEach(function(value) {
+		if (vowels.includes(value)) {
+			count++;
+		}
+	});
+	return count;
+}
+
+console.log(countvowiel("I LOVE BANGLADESHh"));
